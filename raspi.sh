@@ -1,14 +1,14 @@
 #!/bin/bash
 
-apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* -y
+apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* -y
 
-apt autoclean
-apt autoremove -y
+apt-get autoclean
+apt-get autoremove -y
 
-apt update
-apt full-upgrade -y
+apt-get update
+apt-get full-upgrade -y
 
-apt install xdotool unclutter sed -y
+apt-get install xdotool unclutter sed -y
 
 # Enable autologin
 # 3 Boot Options -> B1 Desktop / CLI -> B4 Desktop Autologin
